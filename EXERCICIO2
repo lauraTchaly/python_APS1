@@ -1,0 +1,4 @@
+x = 10
+div = (x/2)
+print(f'O resultado é = {div}')
+
