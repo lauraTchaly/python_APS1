@@ -1,0 +1,12 @@
+ import ast
+numero_base16 = ast.literal_eval('0xFFFAEDA10')
+numero_base2 = bin(numero_base16)
+numero_base8 = oct(numero_base16)
+numero_base7 = divmod(numero_base16,7)
+
+print(f'numero na base 16 = FFFAEDA10')
+print(f'Esse numero na base2 = {numero_base2}')
+print(f'Esse numero na base8 = {numero_base8}')
+print(f'Esse numero na base7 = {numero_base7}')
+
+ 
