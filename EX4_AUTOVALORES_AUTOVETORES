@@ -1,5 +1,6 @@
 import numpy as np
 x = np.array([[3,2,7],[2,5,7],[7,1,8]])
-autovalores,autovetores = np.linalg.eig(x)
-autovalores
+autovetores = np.linalg.eig(x)
+autovalores = np.linalg.eig(x)
 autovetores
+autovalores
