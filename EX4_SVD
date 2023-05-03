@@ -1,0 +1,4 @@
+from scipy.linalg import svdvals
+import numpy as np 
+usa_citi_vistors = np.array([[3,2,7],[2,5,7],[7,1,8]])
+svdvals(usa_citi_vistors)
