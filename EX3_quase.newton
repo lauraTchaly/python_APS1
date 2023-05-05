@@ -1,0 +1,17 @@
+import numpy as np
+def quasinewton_method(f, x0, tol);
+  n_iter = 0
+  x = x0
+  H = np.eye(len(x))
+  while np.linalg.norm(f(x)) > tol
+    p = -np.linalg.solve(H, f(x))
+    alpha = 1
+    while f(x + alpha*p) > f(x) + 0.5*alpha*np.dot(f(x), p)
+      alpha /= 2
+    s = alpha*p
+    x_new = x + s
+    y = f(x_new) - f(x)
+    H = H + np.outer(y, y)/(np.dot(y, s)) - np.outer(H @ s, H @ s)/(np.dot(s, H @ s))
+    x = x_new
+    n_iter += 1
+  return x, n_iter
