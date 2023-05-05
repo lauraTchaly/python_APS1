@@ -15,3 +15,10 @@ def quasinewton_method(f, x0, tol);
     x = x_new
     n_iter += 1
   return x, n_iter
+  
+  
+f = lambda x: np.array([x[0]**4 - 7*x[0]**2 + x[0] - 8])
+x0 = np.array([1])
+tol = 1e-6
+root_quasinewton, n_iter_quasinewton = quasinewton_method(f, x0, tol)
+print(f"Método de quase-Newton:\nNúmero de iterações: {n_iter_quasinewton}\nValor aproximado da raiz: {root_quasinewton}\n")
