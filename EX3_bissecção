@@ -10,3 +10,11 @@ else
     a = c
   n_iter +=1
 return (a+b)/2, n_iter
+
+f = lambda x: x**4 - 7*x**2 + x - 8
+a, b = -5, 5
+tol = 1e-6
+root_bissection, n_iter_bissection = bissection_method(f, a, b, tol)
+print(f"Método da bissecção:\nNúmero de iterações: {n_iter_bissection}\nValor aproximado da raiz: {root_bissection}\n")
+
+
