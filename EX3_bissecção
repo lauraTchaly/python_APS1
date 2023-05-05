@@ -1,0 +1,12 @@
+def bissection_method(f, a, b, tol)
+n_iter = 0
+while (b-a)/2 > tol
+  c = (a+b)/2
+  if f(c) == 0
+    return c, n_iter
+  elif f(a)*f(c) < 0
+     b = c
+else
+    a = c
+  n_iter +=1
+return (a+b)/2, n_iter
